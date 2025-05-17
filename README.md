@@ -1,6 +1,6 @@
 # Readme
 
-This repo holds a simple, but problematic Next.js site that badly needs refactoring. Its one and only page fetches a list of products from our CMS and provides an interface for searching and filtering them. Your challenge is ensure that it meets requirements and improve the code quality.
+This repo holds a simple, but problematic Next.js site that badly needs refactoring. Its one and only page fetches a list of products from our CMS and provides an interface for searching and filtering them. Your challenge is to ensure that it meets requirements and improve the code quality.
 
 ## Challenge
 - [ ] Read this whole doc before getting started!

@@ -1,0 +1,1 @@
+Sanity is the CMS we use at Braze. You don't need to know anything about it. Feel free to ignore this directory.

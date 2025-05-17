@@ -15,7 +15,15 @@ export default function ProductList({ selectedColors, minPrice, maxPrice, search
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
   
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchProducts = async () => {  
+      // --------------------------------------------
+      // NOTE
+      // This project fetches product data from Sanity, our CMS.
+      // Check out the Product type to understand how the data is structured.
+      // We don't expect you to have any Sanity subject matter expertise, but
+      // feel free to adjust the query or the fetch options if you see room
+      // for improvement
+      // --------------------------------------------
       const products = await client.fetch<Product[]>(`*[_type == "product"]`, {}, {
         next: {
           revalidate: 5,
@@ -58,8 +66,7 @@ export default function ProductList({ selectedColors, minPrice, maxPrice, search
                          Number(product.price.toString()) <= Number(maxPrice.toString())
       
       const searchMatch = searchTerm === '' || 
-        product.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-        product.description.toLowerCase().includes(searchTerm.toLowerCase())
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
       
       const isPremium = product.price > 50
       const isColorful = product.color !== 'black' && product.color !== 'white'

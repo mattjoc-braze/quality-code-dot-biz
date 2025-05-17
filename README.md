@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Readme
 
-## Getting Started
+This repo holds a simple, but problematic Next.js site that badly needs refactoring. Its one and only page fetches a list of products from our CMS and provides an interface for searching and filtering them. Your challenge is ensure that it meets requirements and improve the code quality.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Challenge
+- [ ] Read this whole doc before getting started!
+- [ ] Ask for environment variables from your interviewer.
+- [ ] Install dependencies with `pnpm i`.
+- [ ] Run the dev server and validate that the project meets the following requirements:
+  - [ ] Users can search for products by title _or_ description.
+  - [ ] Users can filter products by color.
+  - [ ] Users can filter products by price.
+  - [ ] Users can see how a product's price compares to the average price for products of the same color.
+  - [ ] There's a 25%-off sale for all products over $500. Users can see the original and final prices for items with discounts.
+- [ ] Review the code
+- [ ] Make it better
+  - [ ] Your top priority is to meet the requirements listed above
+  - [ ] After that, priortize improvements that would have the greatest impact on user experience, performance, or reliability.
